@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Sin Motors - Ekskluzywny salon samochodów sportowych i luksusowych w Żurominie. Znajdź auto swoich marzeń.">
+    <title>Sin Motors | Ekskluzywne Samochody | Żuromin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#hero" class="logo">SIN<span>MOTORS</span></a>
+        <ul class="nav-links">
+            <li><a href="#hero">Start</a></li>
+            <li><a href="#catalog">Oferta</a></li>
+            <li><a href="#about">O Nas</a></li>
+            <li><a href="#team">Zespół</a></li>
+            <li><a href="#services">Usługi</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <header id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-preheading">Ekskluzywny Salon Samochodowy</p>
+            <h1>Twoja Droga Do<br><span class="highlight">Perfekcji</span></h1>
+            <p class="hero-description">Odkryj kolekcję najbardziej pożądanych samochodów na świecie. Luksus, moc i
+                prestiż – wszystko w jednym miejscu.</p>
+            <div class="hero-buttons">
+                <a href="#catalog" class="btn btn-primary">Odkryj Kolekcję</a>
+                <a href="#contact" class="btn btn-outline">Umów Wizytę</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Przewiń w dół</span>
+            <div class="scroll-indicator"></div>
+        </div>
+    </header>
+
+    <section class="stats-bar">
+        <div class="container">
+            <div class="stat-item">
+                <span class="stat-number">500+</span>
+                <span class="stat-label">Sprzedanych aut</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">8</span>
+                <span class="stat-label">Lat na rynku</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">98%</span>
+                <span class="stat-label">Zadowolonych klientów</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">24/7</span>
+                <span class="stat-label">Wsparcie techniczne</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="catalog" class="section catalog-section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Nasza kolekcja</p>
+                <h2 class="section-title">Odkryj Naszą Ofertę</h2>
+                <p class="section-subtitle">Starannie wyselekcjonowane pojazdy najwyższej klasy. Każdy samochód
+                    przechodzi szczegółową inspekcję i jest objęty naszą gwarancją jakości.</p>
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Wszystkie</button>
+                <button class="filter-btn" data-filter="sport">Sportowe</button>
+                <button class="filter-btn" data-filter="luxury">Luksusowe</button>
+                <button class="filter-btn" data-filter="suv">SUV</button>
+            </div>
+
+            <div id="car-grid" class="car-grid">
+                <!-- Cars injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images">
+                    <img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=600" alt="Nasz salon"
+                        class="about-img-main">
+                    <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=400" alt="Samochód sportowy"
+                        class="about-img-secondary">
+                </div>
+                <div class="about-content">
+                    <p class="section-label">O naszej firmie</p>
+                    <h2 class="section-title text-left">Pasja Do Motoryzacji<br>Od 2015 Roku</h2>
+
+                    <p class="about-lead">Sin Motors to nie tylko salon samochodowy – to miejsce, gdzie pasja do
+                        motoryzacji spotyka się z profesjonalizmem i indywidualnym podejściem do każdego klienta.</p>
+
+                    <p>Nasza historia zaczęła się w małym warsztacie w Żurominie, gdzie założyciele firmy – pasjonaci
+                        motoryzacji – postanowili stworzyć miejsce oferujące ekskluzywne samochody dla wymagających
+                        klientów z całego Mazowsza i nie tylko.</p>
+
+                    <p>Przez lata zbudowaliśmy reputację zaufanego partnera, który nie tylko sprzedaje samochody, ale
+                        przede wszystkim pomaga spełniać marzenia. Każdy pojazd w naszej ofercie jest starannie
+                        wyselekcjonowany i przechodzi wieloetapową kontrolę jakości.</p>
+
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <span class="feature-icon">✓</span>
+                            <div>
+                                <strong>Gwarancja jakości</strong>
+                                <p>Każdy samochód z pełną historią serwisową</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <span class="feature-icon">✓</span>
+                            <div>
+                                <strong>Indywidualne podejście</strong>
+                                <p>Dopasowujemy ofertę do Twoich potrzeb</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <span class="feature-icon">✓</span>
+                            <div>
+                                <strong>Profesjonalny serwis</strong>
+                                <p>Wsparcie po zakupie przez cały okres eksploatacji</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="section team-section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Nasz zespół</p>
+                <h2 class="section-title">Poznaj Naszych Ekspertów</h2>
+                <p class="section-subtitle">Zespół pasjonatów motoryzacji z wieloletnim doświadczeniem, gotowych pomóc
+                    Ci w wyborze idealnego samochodu.</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400" alt="Jan Kowalski">
+                    </div>
+                    <h3>Jan Kowalski</h3>
+                    <p class="team-role">Założyciel & CEO</p>
+                    <p class="team-bio">20 lat doświadczenia w branży motoryzacyjnej. Pasjonat samochodów sportowych.
+                    </p>
+                </div>
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400" alt="Anna Nowak">
+                    </div>
+                    <h3>Anna Nowak</h3>
+                    <p class="team-role">Dyrektor Sprzedaży</p>
+                    <p class="team-bio">Specjalistka ds. finansowania i leasingu. Pomoże znaleźć najlepsze rozwiązanie.
+                    </p>
+                </div>
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400"
+                            alt="Piotr Wiśniewski">
+                    </div>
+                    <h3>Piotr Wiśniewski</h3>
+                    <p class="team-role">Główny Mechanik</p>
+                    <p class="team-bio">Certyfikowany technik Porsche i BMW. Dba o każdy szczegół.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400"
+                            alt="Magdalena Zielińska">
+                    </div>
+                    <h3>Magdalena Zielińska</h3>
+                    <p class="team-role">Doradca Klienta</p>
+                    <p class="team-bio">Ekspertka od samochodów luksusowych. Zapewni Ci VIP-owy serwis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section services-section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Co oferujemy</p>
+                <h2 class="section-title">Kompleksowa Obsługa</h2>
+                <p class="section-subtitle">Od wyboru samochodu po serwis gwarancyjny – jesteśmy z Tobą na każdym
+                    etapie.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🚗</div>
+                    <h3>Sprzedaż Premium</h3>
+                    <p>Szeroki wybór nowych i używanych samochodów premium z pełną dokumentacją i historią serwisową.
+                        Każdy pojazd przechodzi 150-punktową inspekcję.</p>
+                    <a href="#catalog" class="service-link">Zobacz ofertę →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Profesjonalny Serwis</h3>
+                    <p>Autoryzowany serwis z oryginalnymi częściami. Nasi mechanicy są certyfikowani przez czołowych
+                        producentów. Gwarancja na wszystkie naprawy.</p>
+                    <a href="#contact" class="service-link">Umów wizytę →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💳</div>
+                    <h3>Elastyczne Finansowanie</h3>
+                    <p>Leasing operacyjny i finansowy, kredyt samochodowy, wynajem długoterminowy. Współpracujemy z
+                        najlepszymi bankami i instytucjami finansowymi.</p>
+                    <a href="#contact" class="service-link">Zapytaj o ofertę →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3>Rozszerzona Gwarancja</h3>
+                    <p>Oferujemy rozszerzoną gwarancję do 5 lat lub 100 000 km na wszystkie pojazdy z naszej oferty.
+                        Twój spokój ducha jest dla nas priorytetem.</p>
+                    <a href="#contact" class="service-link">Dowiedz się więcej →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚚</div>
+                    <h3>Dostawa Pod Drzwi</h3>
+                    <p>Dostarczymy Twój nowy samochód bezpośrednio pod wskazany adres. Obsługujemy całą Polskę. Pierwszy
+                        przegląd gratis.</p>
+                    <a href="#contact" class="service-link">Zamów dostawę →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔄</div>
+                    <h3>Odkup i Zamiana</h3>
+                    <p>Chcesz wymienić swój obecny samochód? Oferujemy uczciwe wyceny i możliwość zamiany na pojazd z
+                        naszej oferty z dopłatą.</p>
+                    <a href="#contact" class="service-link">Wyceń swoje auto →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p class="section-label">Skontaktuj się</p>
+                    <h2 class="section-title text-left">Porozmawiajmy<br>O Twoich Potrzebach</h2>
+                    <p class="contact-intro">Masz pytania? Chcesz umówić się na jazdę próbną lub wizytę w naszym
+                        salonie? Wypełnij formularz lub skontaktuj się z nami bezpośrednio – odpowiadamy w ciągu 24
+                        godzin.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <strong>Adres</strong>
+                                <p>ul. Lidzbarska 27<br>09-300 Żuromin<br>woj. mazowieckie</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <div>
+                                <strong>Telefon</strong>
+                                <p>+48 23 657 28 60</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">✉️</span>
+                            <div>
+                                <strong>Email</strong>
+                                <p>kontakt@sinmotors.pl</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">🕐</span>
+                            <div>
+                                <strong>Godziny otwarcia</strong>
+                                <p>Poniedziałek - Piątek: 8:00 - 17:00<br>Sobota: 9:00 - 14:00<br>Niedziela: Zamknięte
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2426.5!2d19.92!3d53.07!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTPCsDA0JzEyLjAiTiAxOcKwNTUnMTIuMCJF!5e0!3m2!1spl!2spl!4v1"
+                            width="100%" height="200" style="border:0; border-radius: 8px;" allowfullscreen=""
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <h3>Wyślij wiadomość</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Imię i Nazwisko *</label>
+                            <input type="text" id="name" name="name" placeholder="Jan Kowalski" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Adres Email *</label>
+                            <input type="email" id="email" name="email" placeholder="jan@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Numer Telefonu</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+48 123 456 789">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Temat</label>
+                            <select id="subject" name="subject">
+                                <option value="general">Zapytanie ogólne</option>
+                                <option value="test-drive">Jazda próbna</option>
+                                <option value="financing">Oferta finansowania</option>
+                                <option value="service">Serwis / Naprawa</option>
+                                <option value="sell">Chcę sprzedać auto</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="car-interest">Interesujący samochód (opcjonalnie)</label>
+                        <input type="text" id="car-interest" name="car-interest"
+                            placeholder="np. Porsche 911, BMW X7...">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Wiadomość *</label>
+                        <textarea id="message" name="message" rows="5"
+                            placeholder="Opisz swoje potrzeby lub zadaj pytanie..." required></textarea>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">Wyrażam zgodę na przetwarzanie moich danych osobowych w celu obsługi
+                            zapytania. *</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Wyślij Wiadomość</button>
+                    <p class="form-note">* Pola wymagane. Odpowiadamy w ciągu 24 godzin roboczych.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="car-modal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Zamknij">&times;</button>
+            <div class="modal-body">
+                <div class="modal-gallery">
+                    <img id="modal-img" src="" alt="">
+                </div>
+                <div class="modal-info">
+                    <span class="modal-badge" id="modal-type"></span>
+                    <h2 id="modal-title"></h2>
+                    <p class="modal-price" id="modal-price"></p>
+                    <p id="modal-desc" class="modal-desc"></p>
+                    <h4>Specyfikacja techniczna</h4>
+                    <ul id="modal-specs" class="modal-specs"></ul>
+                    <div class="modal-actions">
+                        <a href="#contact" class="btn btn-primary" onclick="closeModal()">Zapytaj o ten samochód</a>
+                        <button class="btn btn-outline" onclick="closeModal()">Zamknij</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="#hero" class="logo">SIN<span>MOTORS</span></a>
+                    <p>Twój zaufany partner w świecie motoryzacji premium. Od 2015 roku pomagamy klientom spełniać
+                        marzenia o ekskluzywnych samochodach.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook">FB</a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram">IG</a>
+                        <a href="https://youtube.com" target="_blank" aria-label="YouTube">YT</a>
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">IN</a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Szybkie Linki</h4>
+                    <ul>
+                        <li><a href="#catalog">Nasza Oferta</a></li>
+                        <li><a href="#about">O Firmie</a></li>
+                        <li><a href="#team">Nasz Zespół</a></li>
+                        <li><a href="#services">Usługi</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Informacje</h4>
+                    <ul>
+                        <li><a href="#">Polityka Prywatności</a></li>
+                        <li><a href="#">Regulamin</a></li>
+                        <li><a href="#">Pliki Cookies</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Kariera</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Bądź na bieżąco z nowościami w naszej ofercie i promocjami.</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" placeholder="Twój adres email" required>
+                        <button type="submit" class="btn btn-primary">Zapisz się</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Sin Motors. Wszelkie prawa zastrzeżone.</p>
+                <p class="footer-address">ul. Lidzbarska 27, 09-300 Żuromin | Projekt studencki - Technikum w Żurominie
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
